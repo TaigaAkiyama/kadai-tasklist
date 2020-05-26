@@ -1,0 +1,12 @@
+<ul>
+  <% tasks.each do |task| %>
+    <li>
+      <div>
+      <%= link_to task.id, task %> posted at <%= task.created_at %>
+      </div>
+      <div>
+      <P><%= task.content %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>
